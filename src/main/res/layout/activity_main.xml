@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="30dp"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:text="Sign Up"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="50dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_below="@+id/username"/>
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Retype Password"
+        android:layout_marginTop="50dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_below="@+id/password"/>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/repassword"/>
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnsignup"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:text="Complain Management System"
+
+        android:layout_below="@id/btnsignin"
+        />
+</RelativeLayout >
